@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Index.css">
+    <script>
+            var slideIndex;
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+           
+                slides[slideIndex].style.display = "block";  
+                dots[slideIndex].className += " active";
+                //chuyển đến slide tiếp theo
+                slideIndex++;
+                //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+                if (slideIndex > slides.length - 1) {
+                  slideIndex = 0
+                }    
+                //tự động chuyển đổi slide sau 5s
+                setTimeout(showSlides, 5000);
+            }
+            //mặc định hiển thị slide đầu tiên 
+            showSlides(slideIndex = 0);
+           
+           
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+          </script>
+</head>
+<body background="hinhasm/nenden.jpg">
+
+        <nav class="between">
+                <div class="logo">
+                        <img align="left" src="hinhasm/logo.png" width="300" alt="Lỗi hình ảnh">
+                    </div>
+                        <div id="signin">
+                            <a href="dangnhap.html">ĐĂNG NHẬP</a> |
+                            <a href="dangki.html">ĐĂNG KÍ</a>
+                        </div>
+                        <center>
+                        <div class="tinhnangfb">
+                            <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous"       
+                    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=445903292860766&autoLogAppEvents=1">
+                    </script>
+                         <br>
+                            <div class="fb-like" 
+                                data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" 
+                                data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                            </div>
+                        </center>
+                        </div>
+                <ul>
+                <li> <a href="index.html">Trang chủ</a> </li> 
+                <li> <a href="#">COPA AMERICA 2019</a> 
+                        <ul id="menucon">
+                            <li> <a href="Copa.html">Lịch thi đấu</a></li>
+                            <li> <a href="tintuccopa.html">Tin tức COPA</a></li>
+                        </ul>
+                </li> 
+                <li> <a href="#">PRIMIER LEAGUE</a> 
+                        <ul id="menucon">
+                            <li> <a href="ngoaihanganh.html">Lịch thi đấu</a></li>
+                            
+                            <li> <a href="bxh_NHA.html">Bảng xếp hạng</a> </li>
+                        </ul>
+                </li>  
+                <li> <a href="#">LALIGA</a>
+                    <ul id="menucon">
+                            <li> <a href="Laliga.html">Lịch thi đấu</a></li>
+                            
+                            <li> <a href="bxh_LALIGA.html">Bảng xếp hạng</a> </li>
+                        </ul>
+                </li>  
+                <li> <a href="#">LEAGUE 1</a> 
+                    <ul id="menucon">
+                            <li> <a href="league1.html">Lịch thi đấu</a></li>
+                            
+                            <li> <a href="bxh_LEAGUE1.html">Bảng xếp hạng</a> </li>
+                        </ul>
+                </li> 
+                <li> <a href="#">SERIA</a> 
+                    <ul id="menucon">
+                            <li> <a href="seria.html">Lịch thi đấu</a></li>
+                            
+                            <li> <a href="bxh_SERIA.html">Bảng xếp hạng</a> </li>
+                        </ul>
+                </li>  
+                <li> <a href="#">BUNDESLIGA</a> 
+                    <ul id="menucon">
+                            <li> <a href="Bundesliga.html">Lịch thi đấu</a></li>
+                           
+                            <li> <a href="bxh_BUNDESLIGA.html">Bảng xếp hạng</a> </li>
+                        </ul>
+                </li> 
+                <li><a href="chuyennhuong.html">CHUYỂN NHƯỢNG</a></li>
+                <li><a href="#">TIN NÓNG</a></li>
+                      
+                </ul>
+            </nav>
+
+<br> <br> <br> <br> <br> <br> <br>
+
+    <br> 
+    <header class="header1">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="hinhasm/slideshow/slide1.jpg" width="1350" height="300" alt="">
+            </div>
+
+            <div class="mySlides fade">
+                    <img src="hinhasm/slideshow/slide2.jpg" width="1350" height="300" alt="">
+                </div>
+            <div class="mySlides fade">
+                    <img src="hinhasm/slideshow/slide3.jpg" width="1350" height="300" alt="">
+                </div>
+            <div class="mySlides fade">
+                    <img src="hinhasm/slideshow/slide4.jpg" width="1350" height="300" alt="">
+                </div>
+            
+        </div>
+        <br>
+        <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+        </header>
+<br>
+        <hr>
+
+    <article>
+            <aside class="aside1">
+                    <img align="left" src="hinhasm/pogba.jpg" width="420" alt="Lỗi hình ảnh">
+                    <br>
+                    <div id="tinmu">
+                     <a href="tin1.html"><h2>MU gây chấn động với quyết định sốc với Pogba</h3></a>
+                    </div>
+                     <hr> 
+                    <img src="hinhasm/quangcao1.jpg" width="420"  alt="Lỗi hình ảnh">
+            
+                    <br>
+                    <hr>
+                    
+                    <aside class="tinnho">
+                        <font size="4">
+                        <a href="tin2.html">  Thầy cũ Công Phượng: Cậu ấy là đại diện cho nền bóng đá Việt Nam </a>
+                        <hr>
+                        <a href="tin3.html"> > Báo Thái Lan: Voi chiến tụt 2 bậc FIFA và kém ĐT Việt Nam đến 20 bậc</a>
+                        <hr>
+                        <a href="tin4.html"> > Điểm tin bóng đá Việt Nam: Việt Nam thăng tiến trên BXH FIFA, Quang Hải sang châu Âu hè này</h3></a>
+                        <hr>
+                        <a href="tin5.html"> > 'Bóng ma' chấn thương đe dọa tham vọng của ĐT Việt Nam</a>
+                        <hr>
+                        <a href="tin6.html"> > CHÍNH THỨC! Bỏ xa Thái Lan, ĐT Việt Nam lên hạng 96 thế giới</a>
+                        <hr>
+                        <a href="tin7.html"> > Đón Ferland Mendy, Real thực chất dọn đường cho trụ cột đến Juventus</a>
+                        <hr>
+                        <a href="tin8.html"> > Xác nhận! Chốt thời điểm Man Utd công bố tân binh thứ 2 cực chất</a>
+                        </font>
+            
+                        
+                    </aside>
+            
+                </aside>
+            
+                <aside class="aside2">
+                     <div id="tinnong"> <u> <h1> TIN NÓNG </h1></u> </div> <hr>
+                    <img align="left" src="hinhasm/tinnong1.jpg" width="200" alt="Lỗi hình ảnh"> 
+                        <div id="tieudetin">
+                        <a href="tin9.html"> <h3> Sau đúng 18 năm, CLB Chelsea sẽ tái lập và thay đổi lịch sử đội bóng?</h2></a>
+                        </div>
+                    <div id="tieudetin">
+                            Đội bóng phía tây London từng tạo ra lịch sử với một
+                               động thái lớn vào ngày này của năm 2001...
+                    </div>
+                    <br>
+            <hr> 
+                    <img align="left" src="hinhasm/tinnong2.jpg" width="200" alt="Lỗi hình ảnh">
+                    <div id="tieudetin">
+                     <a href="tin10.html"> <h3>CHÍNH THỨC: Đánh bật Barca, Real chiêu mộ thành công 'Messi Nhật Bản'</h2></a> 
+                     </div>  
+                    <div id="tieudetin">  Phiên chợ Hè 2019 đang diễn ra vô cùng sôi nổi với Los Blancos 
+                     khi hàng loạt thương vụ bom tấn đã được kích nổ. Sau chữ kí đầu tiên mang tên...
+                    </div>
+                    <br>
+                    <hr>
+            
+            
+                    <img align="left" src="hinhasm/tinnong3.jpg" width="200" alt="Lỗi hình ảnh">
+                    <div id="tieudetin">
+                    <a href="tin11.html"><h3>Phan Văn Đức chấn thương: Nỗi lo không chỉ của HLV Park Hang-seo</h2></a>
+                    </div>
+                    <div id="tieudetin">
+                            Phan Văn Đức - một trong những viên ngọc sáng được phát hiện và rèn giũa
+                             của HLV Park Hang-seo. Tiền đạo gốc Nghệ An nổi lên với...
+                    </div>
+            
+                    <br>
+                    <hr>
+                    
+                    
+                    <img align="left" src="hinhasm/tinnong4.jpg" width="200" alt="Lỗi hình ảnh">
+                    <div id="tieudetin"></div>
+                    <a href="tin12.html"><h3>Đón Ferland Mendy, Real thực chất dọn đường cho trụ cột đến Juventus</h2> </a>
+                    </div>
+                    <div id="tieudetin">
+                        Trong số 5 bản hợp đồng đã cập bến Real Madrid, Ferland Mendy là vị trí hiếm hoi
+                     ở hàng phòng ngự. Những vấn đề tồn đọng của...
+                    </div>
+                    
+            
+                     <br> <hr>
+                        
+                     
+                     <img align="left" src="hinhasm/tinnong5.jpg" width="200" alt="Lỗi hình ảnh">
+                     <div id="tieudetin">
+                    <a href="tin13.html"><h3> Everton thừa nước đục thả câu, quyết giật "kẻ thay thế De Gea" với M.U</h2> </a>
+                    </div>
+                    <div id="tieudetin">
+                        David De Gea tiếp tục cho thấy sự bất ổn ở tâm lý và tư tưởng khi chưa
+                     quyết định ký vào bản hợp đồng mới với Manchester United. Trong bối cảnh đó
+                    </div>
+            
+                </aside>
+    </article>
+    <aside>
+            <iframe width="345" height="220" 
+            src="https://www.youtube.com/embed/1-Msi6OSGvg" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    <br>
+    <br>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.266829517723!2d106.67997221417183!3d10.790863961879262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d35939c66f%3A0xe52e3ed732b15272!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIFRo4buxYyBow6BuaCBGUFQgUG9seXRlY2huaWMgKENTMSk!5e0!3m2!1svi!2s!4v1560533500728!5m2!1svi!2s" 
+        width="350" height="350" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>
+    </aside>
+    <br>
+
+    <br>
+    
+    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="700" data-numposts="5"></div>
+
+
+    <div class="audio">
+            <iframe scrolling="no" width=200 height=50 src=https://zingmp3.vn/embed/song/ZW9FICD6?start=true frameborder="0" allowfullscreen="true" /> </iframe>
+        </div>
+    <footer>  
+        
+            <font size="4">
+        Website được phát triển bới Mr.Nguyen. <br>
+        Mọi chi tiết cũng như đóng góp xin vui lòng liên hệ: <br>
+        Email: hungnpps08973@fpr.edu.vn    <br> SDT: 0123456789
+    </font>
+    
+    
+    </footer>
+    
+</body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=445903292860766&autoLogAppEvents=1">
+    </script>
+    
+</html>
